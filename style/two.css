@@ -28,7 +28,7 @@ ul, li {
 /* header区样式 */
 #header {
     height: 250px;
-    background-image: linear-gradient(200deg, #009F50, #007339);
+    background-image: linear-gradient(200deg, #c0c9ff, #1affff);
     border-radius: 8px;
     color: #FFF;
 }
@@ -212,7 +212,7 @@ ul, li {
 }
 /* 商品项下划线 */
 .down_line {
-    border-bottom: 2px solid #009F50;
+    border-bottom: 2px solid #0d7d9f;
     margin-bottom: 15px;
     padding-bottom: 10px;
     list-style: none;
@@ -243,7 +243,7 @@ ul, li {
 }
 /* 链接样式 */
 #hot_Goods a {
-    color: #009F50;
+    color: #0d7d9f;
     text-decoration: none;
 }
 #hot_Goods a:hover {
@@ -254,8 +254,8 @@ ul, li {
 #quick_Nav {
     clear: both;
     height: 300px; /* 稍微加高，避免内容溢出 */
-    background-color: #D2FFD2;
-    border-top: 2px solid #009F50;
+    background-color: #b2fcff;
+    border-top: 2px solid #0d7d9f;
     border-radius: 0 0 10px 10px;
     padding: 15px 10px;
     box-sizing: border-box;
@@ -266,20 +266,21 @@ ul, li {
     margin: 0 1% 10px;
     font-size: 12px;
     line-height: 1.8em;
-    border: 1px solid #009F50; /* 模块边框 */
+    border: 1px solid #0d7d9f; /* 模块边框 */
     border-radius: 6px;
-    padding: 10px 8px;
+    padding: 10px 4px;
     background-color: #FFF;
     box-sizing: border-box;
 }
 #quick_Nav .sub_Nav ul .Nav_title {
     font-weight: bold;
-    color: #007339;
+    color: #0d7d9f;
     margin-bottom: 8px;
     padding-bottom: 4px;
-    border-bottom: 1px dotted #009F50;
+	padding-left: 2px;
+    border-bottom: 1px dotted #0d7d9f;
 }
 #quick_Nav .sub_Nav ul li {
     margin: 2px 0;
-    padding-left: 6px;
+    padding-left: 2px;
 }
