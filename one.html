@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>恋爱小日记</title>
+    <link rel="stylesheet" type="text/css" href="style/two.css">
+</head>
+<body>
+    <div id="div_all">
+        <!-- 1. 漂浮广告区 -->
+        <div id="adv"><img src="images/p3.jpg" width="160" height="135" /></div>
+
+        <!-- 2. Header区 -->
+        <div id="header">
+            <div id="top_link">
+                <ul>
+                    <li>登录</li>
+                    <li>|</li>
+                    <li>联系我们</li>
+                    <li>|</li>
+                    <li>注册</li>
+                    <li>|</li>
+                    <li>放大 缩小</li>
+                    <li class="li_Search">
+                        <input name="" type="text" onFocus="this.value=''" value="请输入" />
+                    </li>
+                </ul>
+            </div>
+            <div id="site_Logo"></div>
+            <div id="nav_menu">
+                <ul>
+                    <li>首页
+                        <ul>
+                            <li><a href="#">查看最新</a></li>
+                            <li><a href="#">点点滴滴</a></li>
+                            <li><a href="#">111</a></li>
+                        </ul>
+                    </li>
+                    <li>VIP会员
+                        <ul>
+                            <li><a href="#">VIP会员登录</a></li>
+                            <li><a href="#">申请VIP会员</a></li>
+                            <li><a href="#">订阅免费期刊</a></li>
+                            <li><a href="#">VIP会员的优惠</a></li>
+                            <li><a href="#">VIP会员帮助</a></li>
+                        </ul>
+                    </li>
+                    <li>在线甜蜜
+                        <ul>
+                            <li><a href="#">婴幼儿食品</a></li>
+                            <li><a href="#">1~3岁儿童食品</a></li>
+                            <li><a href="#">婴幼儿乳制品</a></li>
+                            <li><a href="#">儿童乳制品</a></li>
+                            <li><a href="#">儿童零食</a></li>
+                            <li><a href="#">儿童饮料</a></li>
+                            <li><a href="#">专家咨询</a></li>
+                        </ul>
+                    </li>
+                    <li>美食社区
+                        <ul>
+                            <li><a href="#">进入社区</a></li>
+                            <li><a href="#">最新动态</a></li>
+                            <li><a href="#">专题报道</a></li>
+                            <li><a href="#">讨论专区</a></li>
+                            <li><a href="#">社区帮助</a></li>
+                        </ul>
+                    </li>
+                    <li>食品知识
+                        <ul>
+                            <li><a href="#">食物的搭配</a></li>
+                            <li><a href="#">美食营养学</a></li>
+                            <li><a href="#">注意要点</a></li>
+                            <li><a href="#">在线咨询</a></li>
+                        </ul>
+                    </li>
+                    <li>网站帮助
+                        <ul>
+                            <li><a href="#">在线提问</a></li>
+                            <li><a href="#">意见建议</a></li>
+                        </ul>
+                    </li>
+                    <li>关于我们
+                        <ul>
+                            <li><a href="#">关于公司</a></li>
+                            <li><a href="#">关于团队</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">社会责任</a></li>
+                            <li><a href="#">展望未来</a></li>
+                            <li><a href="#">公司新闻</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 3. 快捷链接区（#wrapper） -->
+        <div id="wrapper">
+            <table border="0" cellspacing="10" align="center">
+                <tr>
+                    <td><img src="images/w1.jpg" style="width: 100%; height: 180px; object-fit: cover;"/>
+                        <p><a href="#">选购商品</a><img src="images/sjx.jpg" align="right" /></p>
+                    </td>
+                    <td><img src="images/w2.jpg" style="width: 100%; height: 180px; object-fit: cover;" />
+                        <p><a href="#">在线支付</a><img src="images/sjx.jpg" align="right" /></p>
+                    </td>
+                    <td><img src="images/w3.jpg" style="width: 100%; height: 180px; object-fit: cover;" />
+                        <p><a href="#">免费试吃</a><img src="images/sjx.jpg" align="right" /></p>
+                    </td>
+				</tr>
+				<tr>
+                    <td><img src="images/w4.jpg" style="width: 100%; height: 180px; object-fit: cover;" />
+                        <p><a href="#">冷藏物流</a><img src="images/sjx.jpg" align="right" /></p>
+                    </td>
+                    <td><img src="images/w5.jpg" style="width: 100%; height: 180px; object-fit: cover;" />
+                        <p><a href="#">速递直达</a><img src="images/sjx.jpg" align="right" /></p>
+                    </td>
+                    <td><img src="images/w6.jpg" style="width: 100%; height: 180px; object-fit: cover;" />
+                        <p><a href="#">客户服务</a><img src="images/sjx.jpg" align="right" /></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- 4. 图片轮播区（.indexFocus） -->
+        <div class="indexFocus">
+            <div id="movePic1" class="focusBox">
+                <div id="bigPic" id="oPic">
+                    <ul>
+                        <li><a href="#"><img src="images/01.jpg" /></a></li>
+                        <li><a href="#"><img src="images/02.jpg" /></a></li>
+                        <li><a href="#"><img src="images/03.jpg" /></a></li>
+                        <li><a href="#"><img src="images/04.jpg" /></a></li>
+                        <li><a href="#"><img src="images/05.jpg" /></a></li>
+                    </ul>
+                </div>
+                <div class="btn" id="oBtn">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+                <div class="picText_bg"></div>
+            </div>
+        </div>
+
+        <!-- 5. 热卖商品区（#hot_Goods） -->
+        <div id="hot_Goods">
+            <div class="sub_Goods">
+                <ul>
+                    <!-- g01：梦幻棉花糖 -->
+                    <li class="down_line">
+                        <h3><a href="">梦幻棉花糖</a ></h3>
+                        <div class="goods-content">
+                            <img src="images/g01.jpg" class="goods-img" alt="梦幻棉花糖" />
+                            <div class="goods-text">
+                                <p>棉花糖蓬松柔软，入口即溶，口味甘甜，深受很多年轻人的青睐</p >
+                                <h3><a href=" ">详细内容</a ><img src="images/sjx.jpg" class="arrow-img" alt="箭头" /></h3>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- g02：方形威化饼 -->
+                    <li class="down_line">
+                        <h3><a href="#">松脆好口感 方形威化饼</a ></h3>
+                        <div class="goods-content">
+                            <img src="images/g02.jpg" class="goods-img" alt="方形威化饼" />
+                            <div class="goods-text">
+                                <p>威化饼采用新鲜、纯正、支链淀粉多、粘性大的糯米为主料；先将糯米洗净、浸泡、晾干、磨粉</p >
+                                <h3><a href="#">详细内容</a ><img src="images/sjx.jpg" class="arrow-img" alt="箭头" /></h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub_Goods">
+                <ul>
+                    <!-- g03：进口食品 -->
+                    <li class="down_line">
+                        <h3><a href="#">进口食品 尝鲜正当时</a ></h3>
+                        <div class="goods-content">
+                            <img src="images/g03.jpg" class="goods-img" alt="进口食品" />
+                            <div class="goods-text">
+                                <p>基于绝大多数进口食品的价格都高于市面上同类国产食品</p >
+                                <h3><a href="#">详细内容</a ><img src="images/sjx.jpg" class="arrow-img" alt="箭头" /></h3>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- g04：泰国干果 -->
+                    <li class="down_line">
+                        <h3><a href="#">泰国干果 营养健康新选择</a ></h3>
+                        <div class="goods-content">
+                            <img src="images/g04.jpg" class="goods-img" alt="泰国干果" />
+                            <div class="goods-text">
+                                <p>花生滋养补益，有助于延年益寿，所以民间又称之为“长生果”。</p >
+                                <h3><a href="#">详细内容</a ><img src="images/sjx.jpg" class="arrow-img" alt="箭头" /></h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="sub_Goods">
+                <ul>
+                    <!-- g05：美国青豆 -->
+                    <li class="down_line">
+                        <h3><a href="#">美味体验：美国青豆买十送一</a ></h3>
+                        <div class="goods-content">
+                            <img src="images/g05.jpg" class="goods-img" alt="美国青豆" />
+                            <div class="goods-text">
+                                <p>本活动精选八款商品，分别是：美国青豆芥末味（小包装）、美国青豆芥末味（大包装）</p >
+                                <h3><a href="#">详细内容</a ><img src="images/sjx.jpg" class="arrow-img" alt="箭头" /></h3>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- g06：洋零食 -->
+                    <li class="down_line">
+                        <h3><a href="#">开怀尝鲜“洋零食”</a ></h3>
+                        <div class="goods-content">
+                            <img src="images/g06.jpg" class="goods-img" alt="洋零食" />
+                            <div class="goods-text">
+                                <p>只要你稍微留心一下，便会发现身边的进口食品专营店从稀少到常见，越来越多。</p >
+                                <h3><a href="#">详细内容</a ><img src="images/sjx.jpg" class="arrow-img" alt="箭头" /></h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  <!-- 6. 快速导航区（#quick_Nav） -->
+         <div id="quick_Nav">
+             <div class="sub_Nav">
+                 <h3>&nbsp;&nbsp;&nbsp;&nbsp;快速导航</h3>
+             </div>
+             <div class="sub_Nav">
+                 <ul>
+                     <li class="Nav_title">博客园</li>
+                     <li>查看最新</li>
+                     <li>写博客</li>
+                     <li>进入博客园</li>
+                 </ul>
+             </div>
+             <div class="sub_Nav">
+                 <ul>
+                     <li class="Nav_title">VIP会员</li>
+                     <li>VIP会员登录</li>
+                     <li>申请VIP会员</li>
+                     <li>订阅免费期刊</li>
+                     <li>VIP会员的优惠</li>
+                     <li>VIP会员帮助</li>
+                 </ul>
+             </div>
+             <div class="sub_Nav">
+                 <ul>
+                     <li class="Nav_title">儿童食品选购</li>
+                     <li>婴幼儿食品</li>
+                     <li>1~3岁儿童食品</li>
+                     <li>婴幼儿乳制品</li>
+                     <li>儿童乳制品</li>
+                     <li>儿童零食</li>
+                     <li>儿童饮料</li>
+                     <li>专家咨询</li>
+                 </ul>
+             </div>
+             <div class="sub_Nav">
+                 <ul>
+                     <li class="Nav_title">美食社区</li>
+                     <li>进入社区</li>
+                     <li>最新动态</li>
+                     <li>专题报道</li>
+                     <li>讨论专区</li>
+                     <li>社区帮助</li>
+                     <li class="Nav_title">食品知识</li>
+                     <li>食物的搭配</li>
+                     <li>美食营养学</li>
+                     <li>注意要点</li>
+                     <li>在线咨询</li>
+                 </ul>
+             </div>
+             <div class="sub_Nav">
+                 <ul>
+                     <li class="Nav_title">网站帮助</li>
+                     <li>在线提问</li>
+                     <li>意见建议</li>
+                     <li class="Nav_title">加入我们</li>
+                     <li>事业特色</li>
+                     <li>建站支持</li>
+                     <li>经营管理</li>
+                     <li>在线申请</li>
+                     <li class="Nav_title">网银在线支付</li>
+                     <li>支付平台</li>
+                     <li>支付流程</li>
+                     <li>支付帮助</li>
+                 </ul>
+             </div>
+             <div class="sub_Nav">
+                 <ul>
+                     <li class="Nav_title">关于我们</li>
+                     <li>关于公司</li>
+                     <li>关于团队</li>
+                     <li>联系我们</li>
+                     <li>社会责任</li>
+                     <li>展望未来</li>
+                     <li>公司新闻</li>
+                 </ul>
+             </div>
+         </div>
+     </div>
+
+    <!-- JavaScript脚本 -->
+    <script>
+        /* 1. 漂浮广告逻辑 */
+        var x = 50, y = 60;
+        var xin = true, yin = true;
+        var step = 1;
+        var L = T = 0;
+        var R = document.documentElement.clientWidth - 200;
+        var B = document.documentElement.clientHeight - 150;
+        var obj = document.getElementById("adv");
+        function float0() {
+            x = x + step * (xin ? 1 : -1);
+            if (x < L) { xin = true; x = L; }
+            if (x > R) { xin = false; x = R; }
+            y = y + step * (yin ? 1 : -1);
+            if (y < T) { yin = true; y = T; }
+            if (y > B) { yin = false; y = B; }
+            var xx = x + document.body.scrollLeft;
+            var yy = y + document.body.scrollTop;
+            obj.style.left = xx + "px";
+            obj.style.top = yy + "px";
+        }
+        var t1 = setInterval(float0, 30);
+        obj.onmouseover = function () { clearInterval(t1); };
+        obj.onmouseout = function () { t1 = setInterval(float0, 30); };
+
+        /* 2. 图片轮播逻辑 */
+        function getID(id) { return document.getElementById(id); }
+        function getTag(tag, obj) {
+            return (typeof obj === "object") ? obj.getElementsByTagName(tag) : getID(obj).getElementsByTagName(tag);
+        }
+        var cur = 0;
+        var timer = "";
+        var mainObj = "movePic1";
+        var num = getTag("li", getTag("div", getID(mainObj))[0]).length;
+        var getpic = getTag("li", getTag("div", getID(mainObj))[0]);
+        var getbtn = getTag("li", getTag("div", getID(mainObj))[1]);
+
+        // 初始化轮播
+        for (var i = 0; i < num; i++) {
+            getpic[i].style.display = "none";
+            getbtn[i].onclick = (function (i) {
+                return function () {
+                    getbtn[i].className = "sel";
+                    changePic(i);
+                }
+            })(i);
+        }
+        getpic[cur].style.display = "block";
+        getbtn[cur].className = "sel";
+
+        // 鼠标悬浮/离开轮播
+        getID(mainObj).onmouseover = function () { clearInterval(timer); };
+        getID(mainObj).onmouseout = function () { timer = setInterval(autoPlay, 1000); };
+
+        // 切换图片
+        function changePic(out) {
+            for (i = 0; i < num; i++) {
+                cur = out;
+                getpic[i].style.display = "none";
+                getbtn[i].className = "";
+            }
+            getpic[cur].style.display = "block";
+            getbtn[cur].className = "sel";
+        }
+
+        // 自动轮播
+        function autoPlay() {
+            if (cur >= num - 1) { cur = 0; }
+            else { cur++; }
+            changePic(cur);
+        }
+        timer = setInterval(autoPlay, 1000);
+        mainfun("movePic1", 2000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+@charset "utf-8";
+/* CSS Document */
+#div_all {
+    width: 960px;
+    margin: 5px auto;
+}
+#div_all a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+/* 漂浮广告容器 */
+#adv {
+    position: absolute;
+    z-index: 100;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+ul, li {
+    list-style: none;
+}
+#div_all a:hover {
+    text-decoration: underline;
+}
+
+/* header区样式 */
+#header {
+    height: 250px;
+    background-image: linear-gradient(200deg, #009F50, #007339);
+    border-radius: 8px;
+    color: #FFF;
+}
+#top_link {
+    float: right;
+    margin-top: -10px;
+}
+#top_link ul li {
+    float: left;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 15px;
+}
+.li_Search {
+    width: 195px;
+    padding-top: 0;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.li_Search input {
+    width: 135px;
+    border: 0;
+    margin-left: 25px;
+}
+#site_Logo {
+    width: 230px;
+    height: 188px;
+    margin-left: 10px;
+    background: url(../images/logo.png);
+}
+#nav_menu {
+    margin: 0;
+}
+#nav_menu ul {
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    padding: 0 10px;
+    font-size: 15px;
+    font-family: "黑体";
+    line-height: 30px;
+    cursor: pointer;
+}
+#nav_menu ul li:hover {
+    background-color: #FFF;
+    color: #007339;
+    border-radius: 10px 10px 0 0;
+}
+#nav_menu ul li ul {
+    position: absolute;
+    display: none;
+    margin-left: -50px;
+    z-index: 11;
+}
+#nav_menu ul li:hover ul {
+    display: block;
+}
+#nav_menu ul li ul li {
+    width: 130px;
+    float: none;
+    white-space: nowrap;
+    background-color: #CCC;
+    border-top: 1px dotted #007339;
+}
+#nav_menu ul li ul li a {
+    text-decoration: none;
+    color: #007339;
+    font-family: Verdana, Geneva, sans-serif;
+}
+#nav_menu ul li ul li a:hover {
+    color: #FFF;
+}
+#nav_menu ul li ul li:hover {
+    border-radius: 0;
+    background-color: #008040;
+    color: #FFF;
+}
+
+/* wrapper区样式 */
+#wrapper {
+    clear: both;
+    margin:50px 0;
+	padding-top: 30px;
+}
+#wrapper td {
+    border: 1px solid #E0E0E0;
+    float: none;
+    margin: 0;
+	width: 250px;
+	height: 220px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#wrapper td p {
+    border-top: 1px solid #E0E0E0;
+    margin: 10px 0 0 0;
+	padding-top: 10px;
+}
+
+/* 图片轮播区样式 */
+.indexFocus a {
+    text-decoration: none;
+}
+.indexFocus .focusBox {
+    width: 900px;
+    height: 800px;
+    position: relative;
+    margin: 0 auto 100px;
+}
+.indexFocus .focusBox .bigPic {
+    width: 900px;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+}
+.indexFocus .focusBox .bigPic img {
+    width: 900px;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #CCC;
+	object-fit: cover;
+}
+.indexFocus .focusBox .btn {
+    height: 16px;
+    position: absolute;
+    right: 8px;
+    bottom: 20px;
+    z-index: 10;
+}
+.indexFocus .focusBox .btn ul li {
+    width: 15px;
+    height: 15px;
+    font-size: 14px;
+    line-height: 15px;
+    margin-right: 2px;
+    display: block;
+    float: left;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+}
+.indexFocus .focusBox .btn .sel {
+    width: 15px;
+    height: 15px;
+    background: #B80101;
+    color: #fff;
+}
+.indexFocus .focusBox .picText_bg {
+    width: 890px;
+    height: 26px;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    background: #000;
+    opacity: 0.5;
+}
+
+/* 热卖商品区样式 */
+/* 热卖商品区容器（确保是HTML渲染而非文本） */
+#hot_Goods {
+    font-size: 12px;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    display: block; /* 强制为块级元素，避免文本显示 */
+}
+/* 单个商品列 */
+.sub_Goods {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+.sub_Goods:last-child {
+    margin-right: 0;
+}
+/* 商品项下划线 */
+.down_line {
+    border-bottom: 2px solid #009F50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    list-style: none;
+}
+/* 商品内容布局（图片+文字） */
+.goods-content {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+/* 商品图片 */
+.goods-img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+}
+/* 商品文字区域 */
+.goods-text {
+    flex: 1;
+}
+/* 箭头图（适配PNG格式，固定8x11px） */
+.arrow-img {
+    width: 8px !important;
+    height: 11px !important;
+    vertical-align: middle;
+    margin-left: 5px;
+    display: inline-block;
+}
+/* 链接样式 */
+#hot_Goods a {
+    color: #009F50;
+    text-decoration: none;
+}
+#hot_Goods a:hover {
+    text-decoration: underline;
+}
+/* 快速导航区样式 */
+/* 快速导航区样式（修复+优化） */
+#quick_Nav {
+    clear: both;
+    height: 300px; /* 稍微加高，避免内容溢出 */
+    background-color: #D2FFD2;
+    border-top: 2px solid #009F50;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+.sub_Nav {
+    width: 14%;
+    float: left;
+    margin: 0 1% 10px;
+    font-size: 12px;
+    line-height: 1.8em;
+    border: 1px solid #009F50; /* 模块边框 */
+    border-radius: 6px;
+    padding: 10px 8px;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+#quick_Nav .sub_Nav ul .Nav_title {
+    font-weight: bold;
+    color: #007339;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px dotted #009F50;
+}
+#quick_Nav .sub_Nav ul li {
+    margin: 2px 0;
+    padding-left: 6px;
+}
